@@ -2,6 +2,7 @@
 
 body {
   background: rgba(245, 245, 245, 1);
+  color: #000000;
 }
 
 h1,
@@ -62,6 +63,7 @@ img {
   font-weight: 400;
   line-height: 28px;
   text-align: left;
+  color: #818182;
 }
 
 input[type="text"] {
@@ -72,11 +74,21 @@ input[type="text"] {
   font-weight: 400;
   line-height: 21px;
   text-align: left;
-  color: rgba(0, 0, 0, 1);
+  color: #abb5be;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+input[type="text"]::placeholder {
+  color: #abb5be;
+}
+
+input[type="text"]:focus {
+  outline: none;
 }
 
 select:required:invalid {
-  color: gray;
+  color: #818182;
 }
 
 select[name="school"] {
@@ -87,7 +99,13 @@ select[name="school"] {
   font-weight: 400;
   line-height: 21px;
   text-align: left;
-  color: #000;
+  color: #abb5be;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+select[name="school"]:focus {
+  outline: none;
 }
 
 option[value=""][disabled] {
@@ -95,7 +113,7 @@ option[value=""][disabled] {
 }
 
 option {
-  color: black;
+  color: #000;
 }
 
 .persons-list {
